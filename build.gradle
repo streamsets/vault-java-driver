@@ -138,10 +138,10 @@ uploadArchives {
 //                authentication(userName: ossrhUsername, password: ossrhPassword)
 //            }
 
-            repository(url: 'https://repo.streamsets.net/artifactory/libs-release-local') {
+            repository(url: 'http://nexus:8081/repository/maven-releases/') {
                 authentication(userName: nexusUsername, password: nexusPassword)
             }
-            snapshotRepository(url: 'https://repo.streamsets.net/artifactory/libs-snapshot-local') {
+            snapshotRepository(url: 'http://nexus:8081/repository/maven-snapshots/') {
                 authentication(userName: nexusUsername, password: nexusPassword)
             }
 
